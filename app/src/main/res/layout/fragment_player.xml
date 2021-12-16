@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.PlayerFragment" >
+
+    <ImageView
+        android:id="@+id/iPlayerAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginTop="@dimen/margin_recycler_v"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:layout_marginBottom="@dimen/margin_recycler_v"
+        android:background="?attr/colorOnPrimary"
+        android:contentDescription="@string/img_default"
+        android:src="@drawable/default_player"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlayerAddName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="500dp"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iClubAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/item_club"
+        android:src="@drawable/default_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/iPlayerAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toTopOf="@+id/iPlayerAdd"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvPlayerAddName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="?attr/colorPrimary"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeErrorColor="#D32F2F"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:errorEnabled="true"
+        app:helperText="INSERT NAME"
+        app:helperTextEnabled="true"
+        app:hintTextColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlayerAddDate"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toBottomOf="@+id/iPlayerAdd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPlayerAddName"
+            style="@style/et_style"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btPos"
+        style="@style/pos_botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/clean"
+        app:layout_constraintBottom_toBottomOf="@+id/iPlayerAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toTopOf="@+id/iPlayerAdd"
+        app:layout_constraintVertical_bias="0.75"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <RatingBar
+        android:id="@+id/ratingStartAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="@integer/num_start"
+        android:progressTint="@color/gold_700"
+        android:rating="1"
+        app:layout_constraintBottom_toBottomOf="@+id/iPlayerAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toTopOf="@+id/iPlayerAdd"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvPlayerAddDate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textColorHint="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btAddPlayer"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerAddName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPlayerAddDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorOnPrimary"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:shadowColor="?attr/colorOnPrimary"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btAddBack"
+        style="@style/nav_botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="@+id/btAddClean"
+        app:layout_constraintEnd_toStartOf="@+id/btAddClean"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerAdd"
+        app:layout_constraintTop_toTopOf="@+id/btAddClean" />
+
+    <Button
+        android:id="@+id/btAddClean"
+        style="@style/nav_botton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_900"
+        android:text="@string/clean"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btAddPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/btAddPlayer"
+        app:layout_constraintStart_toEndOf="@+id/btAddBack"
+        app:layout_constraintTop_toTopOf="@+id/btAddPlayer" />
+
+    <Button
+        android:id="@+id/btAddPlayer"
+        style="@style/nav_botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerAdd"
+        app:layout_constraintStart_toEndOf="@+id/btAddClean"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerAddDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

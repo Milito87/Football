@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_high">48dp</dimen>
+    <dimen name="margin_start">8dp</dimen>
+    <dimen name="margin_recycler_v">24dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="no_inset">0dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="button_tablet_size">120dp</dimen>
+
+</resources>

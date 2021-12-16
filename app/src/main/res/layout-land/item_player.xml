@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/iPlayerItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorOnPrimary"
+        android:contentDescription="@string/img_default"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlayerItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ratingStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_player"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iClubItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorOnPrimary"
+        android:contentDescription="@string/item_club"
+        app:layout_constraintBottom_toBottomOf="@id/btItemPos"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerItem"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/btItemPos"
+        app:layout_constraintTop_toTopOf="@+id/btItemPos"
+        app:srcCompat="@drawable/default_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <RatingBar
+        android:id="@+id/ratingStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:max="5"
+        android:progressTint="@color/gold_700"
+        android:rating="1"
+        app:layout_constraintBottom_toBottomOf="@+id/iPlayerItem"
+        app:layout_constraintEnd_toEndOf="@id/iPlayerItem"
+        app:layout_constraintStart_toStartOf="@id/iPlayerItem"
+        app:layout_constraintTop_toTopOf="@+id/iPlayerItem"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvPlayerItemName"
+        style="@style/item_text_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlayerItemDate"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerItem"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerItem"
+        app:layout_constraintTop_toBottomOf="@+id/iPlayerItem"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+        tools:text="player name" />
+
+    <Button
+        android:id="@+id/btItemPos"
+        style="@style/nav_botton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/clean"
+        app:cornerRadius="@dimen/no_inset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iClubItem"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerItem"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerItemDate"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvPlayerItemDate"
+        style="@style/item_text_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/iPlayerItem"
+        app:layout_constraintStart_toStartOf="@+id/iPlayerItem"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerItemName"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+        tools:text="11-11-2002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

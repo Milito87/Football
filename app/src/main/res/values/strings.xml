@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FootballDB</string>
+    <!-- BUTTON -->
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add">ADD</string>
+    <string name="back">BACK</string>
+    <string name="clean">CLEAN</string>
+
+    <string name="goalkeeper">GOALKEEPER</string>
+    <string name="defense">DEFENSE</string>
+    <string name="midfield">MIDFIELD</string>
+    <string name="striker">STRIKER</string>
+
+    <string name="search_gallery">SEARCH GALLERY</string>
+    <string name="not_validated">PLAYER NOT VALIDATED</string>
+    <string name="put_url">PUT YOUR URL HERE</string>
+    <string name="load_url">LOAD URL</string>
+    <string name="load_img">LOAD IMAGE FROM ...</string>
+    <string name="image_path">image/*</string>
+    <string name="select_picture">SELECT PICTURE</string>
+    <string name="image_toolbar">image toolbar</string>
+    <string name="img_default">img_default</string>
+    <string name="img_player">img_player</string>
+    <string name="name">NAME</string>
+    <string name="item_club">item_club</string>
+    <string name="date">DATE</string>
+
+    <!-- MENU -->
+    <string name="light_theme">LIGHT THEME</string>
+    <string name="dark_theme">DARK THEME</string>
+
+    <!-- CREATE CLUBS -->
+    <string name="fcb_name">FC BARCELONA</string>
+    <string name="rma_name">REAL MADRID</string>
+    <string name="atm_name">ATLÉTICO DE MADRID</string>
+    <string name="val_name">VALENCIA CF</string>
+    <string name="sev_name">SEVILLA FC</string>
+    <string name="bet_name">REAL BETIS</string>
+
+    <string name="fcb_url">https://assets.laliga.com/assets/2019/06/07/small/fc-barcelona-femenino.png</string>
+    <string name="rma_url">https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png</string>
+    <string name="atm_url">https://assets.laliga.com/assets/2019/06/07/small/atletico-feminas.png</string>
+    <string name="val_url">https://assets.laliga.com/assets/2019/06/07/small/valencia-femenino.png</string>
+    <string name="sev_url">https://assets.laliga.com/assets/2019/06/07/small/sevilla.png</string>
+    <string name="bet_url">https://assets.laliga.com/assets/2019/06/07/small/betis.png</string>
+
+    <string name="fcb_descr">El Fútbol Club Barcelona Femenino es la sección femenina de su entidad matriz, el Fútbol Club Barcelona, y tiene su sede en Barcelona, España. Fue establecido en 2001, si bien sus orígenes datan a los años 1970, cuando integró definitivamente al Club Femení Barcelona dentro de su estructura deportiva, hecho refrendado oficialmente el 26 de junio de 2002 tras la adquisición de sus derechos federativos.</string>
+    <string name="rma_descr">Actualmente milita en la Primera División Femenina de España,competición que ha ganado en tres ocasiones, por lo que ha participado en la Liga de Campeones Femenina de la UEFA tres veces. Además, disputa la Copa de la Reina, proclamándose campeón de la Copa de la Reina 2008, al derrotar al Levante UD en la final.</string>
+    <string name="atm_descr">El Club Atlético de Madrid Femenino es la sección de fútbol femenino del Club Atlético de Madrid, cuyo primer equipo actualmente milita en la Primera Iberdrola, la máxima competición de fútbol femenino en España. Ha ganado cuatro Ligas (tres de ellas consecutivas, detentando así un trofeo en propiedad), una Copa de la Reina y una Supercopa de España.</string>
+    <string name="val_descr">El Valencia Club de Fútbol Femenino es un club de fútbol femenino español localizado en la ciudad de Valencia que milita en la Primera División Femenina, máxima competición futbolística en España. Anteriormente se denominó D.S.V. Colegio Alemán o A. D. Colegio Alemán - Universitat de València, pero desde 2009 utiliza el nombre y distintivos del Valencia Club de Fútbol fruto de un convenio.</string>
+    <string name="sev_descr">El la temporada 2007-08 el equipo desciende de categoría. Entonces el Sevilla Fútbol Club se desvincula del C. D. Híspalis y crea un nuevo equipo femenino, ya dentro de la estructura del club, que empieza a competir desde la categoría más baja, la Provincial. Aparece así el actual Sevilla Fútbol Club Femenino.</string>
+    <string name="bet_descr">El Betis jugó la fase de ascenso a la Primera División Femenina tras la conclusión de la temporada 2014/15, pero perdió contra la UDG Tenerife. El conjunto verdiblanco volvería a disputar el ascenso al año siguiente, logrando esta vez su objetivo. El Betis femenino jugará así la temporada 2016/17 en Primera.</string>
+    <string name="clubs">CLUBS</string>
+</resources>
